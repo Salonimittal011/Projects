@@ -1,0 +1,58 @@
+#submenu {
+    position: relative;
+    display: inline-block;
+
+    .sub-navbar {
+        display: none;
+        padding-top: 20px;
+        display: none;
+        min-width: 150px;
+        position: absolute;
+        left: 60%;
+        transform: translateX(-50%);
+        z-index: 1;
+        overflow: visible;
+        top: 40px;
+
+        .subnav-item {
+            box-shadow: 8px 8px 16px 16px rgba(0, 0, 0, 0.2);
+            background: rgba(255, 255, 255, 0.3);
+            padding: 0;
+            border-radius: 4px;
+
+            li {
+                display: block;
+                text-align: center;
+
+                a {
+                    text-decoration: none;
+                    padding: 8px 0px;
+                    display: block;
+                    font-size: 16px;
+                    color: black;
+                    margin: 0;
+                    border-radius: 4px;
+
+
+                    &:hover {
+                        color: $white;
+                        background: rgba(0, 0, 0, 0.3);
+                    }
+
+
+                }
+            }
+
+        }
+    }
+
+
+    &:hover,
+    &:focus-within {
+        .sub-navbar {
+            display: block;
+
+        }
+    }
+
+}

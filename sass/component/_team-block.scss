@@ -1,0 +1,122 @@
+.team-member {
+    text-align: center;
+    background: $purple;
+    cursor: pointer;
+
+    .image {
+        padding-top: 20px;
+
+        img {
+            border-radius: 50%;
+            border: 3px solid $red;
+
+
+            &:hover {
+                transform: scale(1.05);
+            }
+
+
+        }
+    }
+
+    h5 {
+        margin: 0;
+        padding-top: 10px;
+        font-family: $OpenSans-Bold;
+        color: $light-pink;
+    }
+
+    p {
+        padding-bottom: 20px;
+        margin: 0;
+        padding-top: 10px;
+        color: $green;
+    }
+
+
+    .icon {
+        padding-bottom: 30px;
+
+        .fa-facebook-f {
+            color: $white;
+            background: $light-purple;
+            padding: 10px 10px;
+            border-radius: 50%;
+            margin: 5px;
+            height: 35px;
+            width: 35px;
+
+            &:hover {
+                background: $dark-blue;
+            }
+        }
+
+        .fa-twitter {
+            color: $white;
+            background: $light-purple;
+            padding: 10px 10px;
+            border-radius: 50%;
+            margin: 5px;
+            height: 35px;
+            width: 35px;
+
+            &:hover {
+                background: $sky-blue;
+            }
+        }
+
+        .fa-google-plus {
+            color: $white;
+            background: $light-purple;
+            padding: 10px 8px;
+            border-radius: 50%;
+            margin: 5px;
+            height: 35px;
+            width: 35px;
+
+            &:hover {
+                background: $red;
+            }
+        }
+
+        .fa-linkedin {
+            color: $white;
+            background: $light-purple;
+            padding: 10px 10px;
+            border-radius: 50%;
+            margin: 5px;
+            height: 35px;
+            width: 35px;
+
+            &:hover {
+                background: $blue;
+            }
+        }
+    }
+
+    &:hover {
+        background: $dark-purple;
+
+        h5 {
+            color: $white;
+        }
+
+        p {
+            color: $red;
+        }
+
+        img {
+            transform: scale(1);
+            transition: .3s ease-in-out;
+        }
+    }
+
+
+    @media screen and (max-width: 992px) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 767px) {
+        margin: 10px;
+    }
+}

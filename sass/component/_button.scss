@@ -1,0 +1,20 @@
+.button {
+    padding-top: 15px;
+
+    button {
+        @include font-size($button-fontsize);
+        cursor: pointer;
+        padding: 10px 80px;
+        background: $light-red;
+        border: none;
+        border-bottom: 3px solid $red;
+        font-weight: 600;
+        color: white;
+        border-radius: 4px;
+        transition: 4s ease;
+
+        &:hover {
+            background: $red;
+        }
+    }
+}

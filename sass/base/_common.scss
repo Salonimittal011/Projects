@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: $OpenSans-Regular;
+   
+}
+
+header {
+    padding-top: 20px;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+
+    @media screen and (max-width: 992px) {
+        padding-top: 0px;
+
+    }
+
+    @media screen and (max-width: 767px) {
+        padding-top: 0px;
+
+    }
+}

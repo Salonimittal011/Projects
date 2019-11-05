@@ -1,0 +1,72 @@
+//font-size
+$topnav-fontsize: 18px;
+$head-fontsize: 50px;
+$banner-f:110px;
+$p-fontsize: 20px;
+$p2-fontsize: 14px;
+$heading-fontsize:26px;
+$image-head-fontsize: 22px;
+$nav-fontsize: 16px;
+$button-fontsize: 25px;
+
+//Regular
+@font-face {
+  font-family: 'Open-Sans-Regular';
+  src: url('../fonts/OpenSans-Regular.eot');
+  src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-Regular.woff') format('woff'),
+    url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//Bold
+@font-face {
+  font-family: 'Open-Sans-Bold';
+  src: url('../fonts/OpenSans-Bold.eot');
+  src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-Bold.woff') format('woff'),
+    url('../fonts/OpenSans-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//Light
+@font-face {
+  font-family: 'Open-Sans-Light';
+  src: url('../fonts/OpenSans-Light.eot');
+  src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-Light.woff') format('woff'),
+    url('../fonts/OpenSans-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//SemiBold
+@font-face {
+  font-family: 'Open-Sans-SemiBold';
+  src: url('../fonts/OpenSans-SemiBold.eot');
+  src: url('../fonts/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-SemiBold.woff') format('woff'),
+    url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// font family
+$OpenSans-Regular: Open-Sans-Regular;
+$OpenSans-Bold: Open-Sans-Bold;
+$OpenSans-Light:Open-Sans-Light;
+$OpenSans-BoldItalic:Open-Sans-BoldItalic;
+$OpenSans-SemiBold: Open-Sans-SemiBold;
+
+//px to em 
+@function calculateEm($size) {
+  $emSize: $size / 16px;
+  @return $emSize * 1em;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateEm($size);
+}

@@ -1,0 +1,113 @@
+.portfolio-images {
+    padding-top: 50px;
+    position: relative;
+
+
+    .portfolio-col {
+        padding-bottom: 20px;
+
+        .images {
+            position: relative;
+
+            img {
+                display: block;
+                width: 100%;
+
+                @media screen and (max-width: 992px) {
+                    width: 100%;
+                }
+
+                @media screen and (max-width: 767px) {
+                    width: 100%;
+                }
+            }
+
+
+        }
+
+        .image-heading {
+
+            h5 {
+                @include font-size($p2-fontsize);
+                color: $grey;
+                padding: 16px 50px;
+                background: $white;
+                margin: 0;
+                font-family: $OpenSans-Light;
+            }
+
+            h5::before {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 0;
+                bottom: 25%;
+                left: 45%;
+                border-bottom: solid 20px $white;
+                border-left: solid 20px transparent;
+                border-right: solid 18px transparent;
+
+
+                @media screen and (max-width: 992px) {
+                    bottom: 23%;
+                }
+
+                @media screen and (max-width: 767px) {
+                    bottom: 18%;
+                }
+            }
+
+        }
+
+        @media screen and (max-width: 992px) {
+
+            padding-bottom: 30px;
+        }
+
+        @media screen and (max-width: 767px) {
+            padding-bottom: 15px;
+
+
+
+        }
+    }
+
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0;
+    transition: all .8s ease-in-out;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+
+    &:hover {
+        opacity: 1;
+        cursor: pointer;
+     
+    }
+
+    .fa-plus {
+        transform: translateY(100%);
+        top: 16%;
+        left: 42%;
+        font-weight: 100;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        padding: 18px 0px;
+        border-radius: 50%;
+        border: 2px solid white;
+    }
+}
+
+h2 {
+    transform: translateY(100%);
+}

@@ -1,0 +1,32 @@
+.heading {
+    h5 {
+        @include font-size($head-fontsize);
+        margin: 0;
+        color: $white;
+        text-align: center;
+        font-weight: 100;
+    }
+
+    @media screen and (max-width: 992px) {
+        h5 {
+            font-size: 40px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        h5 {
+            font-size: 30px;
+        }
+    }
+}
+
+.text {
+    p {
+        padding-bottom: 40px;
+        @include font-size($p2-fontsize);
+
+        @media screen and (max-width: 992px){
+            padding-bottom: 0px;
+        }
+    }
+}

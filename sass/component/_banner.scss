@@ -1,0 +1,70 @@
+.banner {
+    color: $sky-blue;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    font-family: $OpenSans-SemiBold;
+    overflow: hidden;
+
+    .banner-inner {
+        display: flex;
+        background: rgba(255, 255, 255, 0.2);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 30px 40px;
+        transition: all 0.3s ease-in-out;
+        overflow: hidden;
+
+        @media screen and (max-width: 992px) {
+            width: calc(100% - 120px);
+            padding: 30px 10px;
+        }
+
+        @media screen and (max-width: 767px) {
+            width: calc(100% - 60px);
+            padding: 30px 10px;
+
+        }
+    }
+
+    .left {
+        @include font-size($head-fontsize);
+        line-height: 1;
+        text-align: right;
+
+
+        @media screen and (max-width: 992px) {
+            font-size: 48px;
+        }
+
+        @media screen and (max-width: 767px) {
+            font-size: 25px;
+        }
+    }
+
+    .right {
+        @include font-size($banner-f);
+        line-height: 0.86;
+        font-weight: 900;
+        padding-left: 10px;
+
+
+        @media screen and (max-width: 992px) {}
+
+        @media screen and (max-width: 767px) {
+            font-size: 58px;
+        }
+    }
+
+}
+
+.fadeIn-left {
+    left: 20%;
+}
+
+.fadeIn-bottom {
+    top: 80%;
+}
